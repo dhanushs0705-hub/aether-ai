@@ -57,7 +57,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             initial={{ x: -300, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: -300, opacity: 0 }}
-            transition={{ type: 'spring', bounce: 0, duration: 0.4 }}
+            transition={{ type: "spring" as any, bounce: 0, duration: 0.4 }}
             className="w-64 h-full glass border-r border-white/5 flex flex-col relative z-40"
           >
             <div className="p-6 flex justify-between items-center border-b border-white/5">

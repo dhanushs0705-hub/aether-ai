@@ -45,7 +45,7 @@ export default function CustomCursor() {
           y: mousePosition.y - 4,
           scale: isHovering ? 0 : 1,
         }}
-        transition={{ type: 'spring', stiffness: 1000, damping: 40, mass: 0.1 }}
+        transition={{ type: "spring" as any, stiffness: 1000, damping: 40, mass: 0.1 }}
       />
       
       {/* Outer Ring */}
@@ -57,7 +57,7 @@ export default function CustomCursor() {
           scale: isHovering ? 1.5 : 1,
           backgroundColor: isHovering ? 'rgba(0, 245, 255, 0.1)' : 'transparent',
         }}
-        transition={{ type: 'spring', stiffness: 250, damping: 20, mass: 0.2 }}
+        transition={{ type: "spring" as any, stiffness: 250, damping: 20, mass: 0.2 }}
       >
         {isHovering && (
           <motion.div 
@@ -76,7 +76,7 @@ export default function CustomCursor() {
           x: mousePosition.x - 128,
           y: mousePosition.y - 128,
         }}
-        transition={{ type: 'spring', stiffness: 100, damping: 30, mass: 1 }}
+        transition={{ type: "spring" as any, stiffness: 100, damping: 30, mass: 1 }}
       />
     </>
   );
